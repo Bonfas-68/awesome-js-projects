@@ -1,5 +1,6 @@
 /////////////////////////////////////////
 ///Variables
+const links = document.querySelector("a");
 
 const day = document.getElementById("days");
 const hour = document.getElementById("hours");
@@ -7,6 +8,9 @@ const minute = document.getElementById("minutes");
 const second = document.getElementById("seconds");
 const btn = document.getElementById("btn");
 btn.addEventListener("click", function (e) {
+  e.preventDefault();
+});
+links.addEventListener("click", function (e) {
   e.preventDefault();
 });
 

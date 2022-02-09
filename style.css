@@ -7,6 +7,18 @@ html {
   font-family: sans-serif;
   font-size: 62.5%;
 }
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-thumb {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.6rem;
+  background-color: #07071d;
+}
+html::-webkit-scrollbar-track {
+  background-color: #818cc3;
+}
 header {
   /* display: flex;
   justify-content: space-between;
@@ -147,6 +159,14 @@ button {
 .copy:hover {
   background: cornflowerblue;
 } */
+footer {
+  width: 100%;
+  padding: 2rem;
+  background-color: #07071d;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+}
 .question {
   padding: 0.1rem 0.2rem;
 }
