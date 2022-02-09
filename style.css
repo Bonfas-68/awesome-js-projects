@@ -20,10 +20,6 @@ html::-webkit-scrollbar-track {
   background-color: #818cc3;
 }
 header {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
-  /* padding: 1.3rem; */
   background: #b4b2b01e;
   box-shadow: 0 5px 9px 0px rgba(0, 0, 0, 0.2);
 }
@@ -34,8 +30,11 @@ header {
   align-items: center;
   margin: 0 auto;
   padding: 2rem;
+
+  flex-wrap: wrap;
   line-height: 1;
 }
+
 button {
   background: transparent;
   border: none;
@@ -60,6 +59,7 @@ button {
   font-size: 2.6rem;
   color: #07071d;
 }
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
@@ -72,7 +72,29 @@ button {
 
 .sections {
   border-radius: 0.6rem;
-  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px 4px #00000033;
+}
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  .header__container {
+    width: 100%;
+  }
+  .logo h2 {
+    padding-bottom: 1rem;
+  }
+  .container {
+    width: 100%;
+    margin: 3rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .sections {
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 0.6rem;
+    box-shadow: 0 4px 10px 4px #00000033;
+  }
 }
 .card {
   padding: 1rem;
@@ -382,6 +404,8 @@ button:focus {
   text-align: center;
   border-radius: 0.6rem;
   overflow: hidden;
+  width: 85%;
+  margin: 0 auto;
 }
 .search__header {
   background-color: #2747e4;
