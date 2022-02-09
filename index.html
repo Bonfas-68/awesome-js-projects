@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <title>My javascript Projects</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="logo">
+          <h2 class="hlogo">BONJS Projects</h2>
+        </div>
+        <nav class="navbar">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">about</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#testimonials" class="nav__link">testimonials</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+     
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="section" id="search">
+          <div class="search__header">
+            <h4 class="title">Live User Filter</h4>
+            <small class="subtitle">search by name or location</small>
+            <input type="text" id="filter" placeholder="search by name">
+          </div>
+
+          <ul id="result" class="user__list">
+            <!-- Source for this API is https://randomuser.me/api?results==20 for @20 users -->
+            <li>
+              <img src="/img/item-9.jpeg" alt="">
+              <div class="user__info">
+                <h4>Jonh Smith</h4>
+                <p>Kibe Kenya</p>
+              </div>
+            </li>
+            <li>
+              <img src="/img/item-8.jpeg" alt="">
+              <div class="user__info">
+                <h4>Sara Smith</h4>
+                <p>Wexford Kenya</p>
+              </div>
+            </li>
+            <li>
+              <img src="/img/item-9.jpeg" alt="">
+              <div class="user__info">
+                <h4>Bonfas Shildon</h4>
+                <p>Uganda</p>
+              </div>
+            </li>
+            <li>
+              <img src="/img/item-8.jpeg" alt="">
+              <div class="user__info">
+                <h4>Colorado Smith</h4>
+                <p>Portugal</p>
+              </div>
+            </li>
+            <li>
+              <img src="/img/item-8.jpeg" alt="">
+              <div class="user__info">
+                <h4>Ransom Smith</h4>
+                <p>Krut tugal</p>
+              </div>
+            </li>
+            <li>
+              <img src="/img/item-8.jpeg" alt="">
+              <div class="user__info">
+                <h4>OloraCdo Smith</h4>
+                <p>Portugal</p>
+              </div>
+            </li>
+            <li class="load">Loading...</li>
+          </ul>
+        </div>
+        <div class="sections" id="countdown">
+          <div class="card">
+            <h2 class="card__heading">Countdown for Valentine's Day 2022</h2>
+            <p class="card__text">
+              I'm here to present you a surprise for 2022 valentines day. Click
+              the buttons below to copy the text and send to your beloved ones.
+            </p>
+            <div class="count__container">
+              <div class="count__day">
+                <div class="value" id="days">0</div>
+                <p class="count__text">day</p>
+              </div>
+              <div class="count__day">
+                <div class="value" id="hours">0</div>
+                <p class="count__text">hours</p>
+              </div>
+              <div class="count__day">
+                <div class="value" id="minutes">0</div>
+                <p class="count__text">minutes</p>
+              </div>
+              <div class="count__day">
+                <div class="value" id="seconds">0</div>
+                <p class="count__text">seconds</p>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="btn share" id="btn">share</button>
+              <button class="btn copy" id="btn">copy</button>
+            </div>
+          </div>
+        </div>
+        <div class="sections" id="colorflipper">
+          <div class="card">
+            <h2 class="card__heading">
+              Color Flipper <br />Background color change.
+            </h2>
+
+            <h1 class="flipper__heading">
+              background color <br />: <span class="color">#fff5f7</span>
+            </h1>
+
+            <div class="buttons">
+              <button class="btn hex">hex</button>
+              <button class="btn hexOp">rgba</button>
+              <button class="btn copy__btn">copy color</button>
+            </div>
+            <div class="card__text text-center">
+              Click to view and right click to copy the color.
+            </div>
+          </div>
+        </div>
+        <div class="sections" id="tab__layout">
+          <div class="card">
+            <h2 class="card__heading">About Us </h2>
+            <p class="card__text">
+              We employ junior developers to help us in refactoring our code then offer us some of the fundamentals in different languages.
+            </p>
+            <div class="tab__container">
+              <button class="tab__btn active" data-id="about">
+                About us
+              </button>
+              <button class="tab__btn" data-id="mission">
+                Mission
+              </button>
+              <button class="tab__btn" data-id="vission">
+                Vission
+              </button>
+              <button class="tab__btn" data-id="social">
+                Socials
+              </button>
+            </div>
+            <div class="tab__content active__content" id="about">
+              <h2 class="heading">About us</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus illum explicabo voluptas illo est quam hic voluptatibus dolorum repellat dolores. Dicta exercitationem voluptatum rerum odio inventore eligendi itaque. At, corporis?.</p>
+            </div>
+            <div class="tab__content " id="mission">
+              <h2 class="heading">Mission</h2>
+
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nesciunt cupiditate vero possimus dolores libero dolor voluptate quos tempore voluptatem.</p>
+            </div>
+            <div class="tab__content" id="vission">
+              <h2 class="heading">Vission</h2>
+             
+                 <p> My vision is to bring tech home make it be seen as an essential experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nesciunt cupiditate vero possimus dolores libero dolor voluptate quos tempore voluptatem.</p>
+            </div>
+            <div class="tab__content" id="social">
+              
+              <h2 class="heading">Social media</h2>
+                
+                <p>Folow us on the channels listed below to get daily updates and have fun as we discuss out to do list for the wek and most especially don't be unlucky to miss our morning prep Javascript challenge.</p>
+
+                <div class="social__links">
+                  <svg class="icons b ">
+                    <use xlink:href="/sprite.svg#icon-facebook"></use>
+                  </svg>
+                  <svg class="icons lb">
+                    <use xlink:href="/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                  <svg class="icons b">
+                    <use xlink:href="/sprite.svg#icon-twitter-with-circle"></use>
+                  </svg>
+                  <svg class="icons g">
+                    <use xlink:href="/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </div>
+            </div>
+            <!-- <div class="buttons">
+              <button class="btn share">share</button>
+              <button class="btn copy">copy</button> 
+            </div>-->
+          </div>
+        </div>
+        <div class="sections" id="questions">
+          <div class="card">
+            <h2 class="card__heading">General Question</h2>
+            <p class="card__text">
+              These are the most asked questions and we answer them instantly
+              without hesitating, please feel free to add yours by contacting us
+            </p>
+            <article class="question">
+              <div class="content">
+                <p class="question__text">How to terminate account</p>
+                <button class="question__btn">
+                  <span class="plus__btn">➕</span
+                  ><span class="minus__btn">➖</span>
+                </button>
+              </div>
+              <div class="question__content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit libero temporibus placeat maxime animi soluta ipsam suscipit, quae doloremque hic?</p>
+              </div>
+            </article>
+            <article class="question">
+              <div class="content">
+                <p class="question__text">Where is BOJSp located</p>
+                <button class="question__btn">
+                  <span class="plus__btn">➕</span
+                  ><span class="minus__btn">➖</span>
+              </div>
+              <div class="question__content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore iste adipisci nostrum optio assumenda id nihil atque alias tenetur nam.</p>
+              </div>
+            </article>
+              
+            <article class="question">
+
+              <div class="content">
+                  <p class="question__text">How to login without username</p>
+                  <button class="question__btn">
+                    <span class="plus__btn">➕</span
+                    ><span class="minus__btn">➖</span>
+                </div>
+                <div class="question__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tenetur esse minus eaque dolores vero at velit illum aliquid quaerat.</p>
+                </div>
+              </article>
+
+              <article class="question">
+                <div class="content">
+                  <p class="question__text">how to upgrade to premium</p>
+                  <button class="question__btn">
+                    <span class="plus__btn">➕</span
+                    ><span class="minus__btn">➖</span>
+                </div>
+                <div class="question__content">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit tenetur esse minus eaque dolores vero at velit illum aliquid quaerat.</p>
+                </div>
+              </article>
+              
+            <!-- <div class="buttons">
+              <button class="btn share">share</button>
+              <button class="btn copy">copy</button>
+            </div> -->
+          </div>
+        </div>
+        <div class="sections" id="password__generator">
+          <div class="card">
+            <h2 class="card__heading">Our Password Generator</h2>
+            <p class="card__text">
+              This project is going to show how the suggested password you see in most of the websites were generated please feel free to ask for any guidance if you're stack
+            </p>
+
+            <div class="pw_body">
+              <div class="pw_header">
+                  <div class="pw" >
+                      <span id="pw">B_)(oluoch~&*?/1{2002}</span>
+                      <button class="copy" id="copy">Copy</button>
+                  </div>
+              </div>
+              <div class="form_control">
+                  <label for="len">Password Length</label>
+                  <input value="20" type="number" name="" id="len" min="4" max="40">
+              </div>
+              <div class="form_control">
+                  <label for="upper">Contain Uppercase Letters</label>
+                  <input type="checkbox" name="" id="upper">
+              </div>
+              <div class="form_control">
+                  <label for="lower">Contain Lowercase Letters</label>
+                  <input type="checkbox" name="" id="lower">
+              </div>
+              <div class="form_control">
+                  <label for="upper">Contain Numbers</label>
+                  <input type="checkbox" name="" id="number">
+              </div>
+              <div class="form_control">
+                  <label for="upper">Contain Symbols</label>
+                  <input type="checkbox" name="" id="symbol">
+              </div>
+              <button id="generate">Generate Password</button>
+          </div>
+        </div>
+        <div class="sections"></div>
+        <div class="sections"></div>
+        
+      
+      
+      
+      
+      
+      
+        
+      </div>
+    </main>
+  </body>
+</html>
