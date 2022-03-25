@@ -16,7 +16,7 @@ links.addEventListener("click", function (e) {
 
 /////////////////////////////////////////
 ///CountDown timer for @2022
-const deadDate = "14 feb 2022";
+const deadDate = "15 april 2022";
 setInterval(() => {
   countDown();
 }, 1000);
